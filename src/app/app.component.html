@@ -1,0 +1,22 @@
+<header>
+  <nav class="navbar" [ngStyle]="{ 'background-color': getRandomColorNav() }">
+    <ul>
+      <li>
+        <a [ngStyle]="{ color: getRandomColorText() }" routerLink="/">Home</a>
+      </li>
+      <li>
+        <a [ngStyle]="{ color: getRandomColorText() }" routerLink="/posts"
+          >Posts</a
+        >
+      </li>
+      <li>
+        <a [ngStyle]="{ color: getRandomColorText() }" routerLink="/about"
+          >About Us</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="page-content">
+  <router-outlet></router-outlet>
+</main>

@@ -1,0 +1,12 @@
+<section class="all-divs">
+  <div
+    class="rectangle fade-in"
+    *ngFor="let idx of [1, 2, 3, 4, 5, 6, 7, 8, 9]"
+    [ngStyle]="{
+      'background-color': getRandomColorDiv(),
+      'animation-delay': idx * 0.3 + 's'
+    }"
+  >
+    <p>{{ generateRandomExpression() }}</p>
+  </div>
+</section>

@@ -1,0 +1,34 @@
+.all-divs {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0 20px 10px;
+  height: calc(100vh - 116px);
+
+  .rectangle {
+    display: flex;
+    border-radius: 7px;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in 0.5s ease-in-out forwards;
+    opacity: 0;
+
+    p {
+      display: flex;
+      padding: 20px;
+      font-size: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
